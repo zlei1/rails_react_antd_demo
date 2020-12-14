@@ -1,6 +1,12 @@
 import { combineReducers } from "redux";
-import user from "./user";
+import admin from "./admin";
+import app from "./app";
+import setting from "./setting";
+import tags from "./tags";
 
 export default combineReducers({
-  user
+  app,
+  admin,
+  setting,
+  tags
 });

@@ -27,4 +27,4 @@ class Router extends React.Component {
   }
 }
 
-export default connect((state) => state.user)(Router);
+export default connect((state) => state.admin)(Router);

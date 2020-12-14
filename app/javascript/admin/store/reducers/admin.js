@@ -7,22 +7,22 @@ const defaultState = {
   api_access_token: getToken(),
 };
 
-export default function user(state = defaultState, action) {
+export default function admin(state = defaultState, action) {
   switch (action.type) {
-    case types.SET_USER_API_ACCESS_TOKEN:
+    case types.SET_ADMIN_API_ACCESS_TOKEN:
       return {
         ...state,
         api_access_token: action.token
       };
-    case types.SET_USER_INFO:
+    case types.SET_ADMIN_INFO:
       return {
         ...state,
         name: action.name,
-        role: action.role,
+        avatar: action.avatar,
       };
-    case types.RESET_USER_INFO:
+    case types.RESET_ADMIN_INFO:
       return {};
     default:
       return state;
-  }
-}
+  };
+};
